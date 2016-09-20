@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3选择器</title>
+    <style type="text/css">
+        table,tr,td {
+            border: 1px solid black;
+            box-sizing: border-box;  //content-box:宽高仅对内容起作用，border-box:宽高作用于内边距及内容
+            -webkit-box-sizing: border-box;
+            border-collapse: collapse; //新接触的内容
+        }
+    </style>
+</head>
+<body>
+<div>
+    CSS3选择器：
+    <ul>
+        <li>基本选择器</li>
+        <li>层次选择器</li>
+        <li>伪类选择器
+            <ol>
+                <li>动态伪类选择器</li>
+                <li>目标伪类选择器</li>
+                <li>语言伪类选择器</li>
+                <li>UI元素状态伪类选择器</li>
+                <li>结构伪类选择器</li>
+                <li>否定伪类选择器</li>
+            </ol>
+        </li>
+        <li>伪元素</li>
+        <li>属性选择器</li>
+    </ul>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>选择器</td>
+            <td>类型</td>
+            <td>功能描述</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>通配选择器</td>
+            <td>文档中所有的HTML元素</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>元素选择器</td>
+            <td>指定的类型的HTML元素</td>
+        </tr>
+        <tr>
+            <td>#ID</td>
+            <td>ID选择器</td>
+            <td>属性id的任意类型元素</td>
+        </tr>
+        <tr>
+            <td>.class</td>
+            <td>类选择器</td>
+            <td>属性class的任意多元素</td>
+        </tr>
+        <tr>
+            <td>selector1,selector2</td>
+            <td>群组选择器</td>
+            <td>合并的元素</td>
+        </tr>
+    </table>
+</div>
+<div>
+
+</div>
+</body>
+</html>
