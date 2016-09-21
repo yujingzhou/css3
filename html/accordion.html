@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>:target手风琴效果应用</title>
+    <style type="text/css">
+        .accordionMenu{
+            font: 12px simsun;
+            background: #FFFFFF;
+            color: #424242;
+            margin: 0 auto;
+            padding: 10px;
+            width: 500px;
+        }
+        .accordionMenu h2{
+            margin: 1px 0;
+            padding: 0;
+            position: relative;
+        }
+        .accordionMenu h2 a{
+            font-size: 13px;
+            text-shadow: 2px 2px 2px #aeaeae;
+            text-decoration: none;
+            background-color: #8f8f8f;
+            background-image: -webkit-linear-gradient(top,#cecece,#8f8f8f);
+            border-radius: 5px;
+            color: #424242;
+            display: block;
+            margin: 0;
+            padding: 10px;
+        }
+        .accordionMenu h2:before{
+            border: 5px solid #FFFFFF;
+            border-color: #FFFFFF transparent transparent;
+            width: 0;
+            height: 0;
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 15px;
+        }
+        .accordionMenu :target h2 a,
+        .accordionMenu h2 a:hover{
+            background-image: -webkit-linear-gradient(top,#6bb2ff,#2288dd);
+            color: #FFFFFF;
+        }
+        .accordionMenu p{
+            font-size: 14px;
+            margin: 0;
+            padding: 0 10px;
+            -webkit-transition: all .5s ease-in;
+            display: none;
+            overflow: hidden;
+            background: lightyellow;
+            border-radius: 5px;
+        }
+        .accordionMenu :target p{
+            height: 100px;
+            display: block!important;
+            overflow: auto;
+        }
+        .accordionMenu :target h2:before{
+            -webkit-transform: rotate(-90deg);
+            -webkit-transform-origin: 50% 0;
+            -webkit-transition: all .2s ease;
+        }
+    </style>
+</head>
+<body>
+<div class="accordionMenu">
+    <div class="menuSection" id="friend">
+        <h2><a href="#friend">我的好友</a></h2>
+        <p>我的好友：URL后面跟锚点#，指向文档内某个具体的元素。这个被链接的元素就是目标元素(target element)，:target选择器用于选取当前活动的目标元素。URL后面跟锚点#，指向文档内某个具体的元素。这个被链接的元素就是目标元素(target element)，:target选择器用于选取当前活动的目标元素。</p>
+    </div>
+    <div class="menuSection" id="stranger">
+        <h2><a href="#stranger">陌生人</a></h2>
+        <p>陌生人：E:target伪类使用方法E:target伪类使用方法E:target伪类使用方法E:target伪类使用方法E:target伪类使用方法E:target伪类使用方法E:target伪类使用方法</p>
+    </div>
+    <div class="menuSection" id="blacklist">
+        <h2><a href="#blacklist">黑名单</a></h2>
+        <p>这里是黑名单的内容！！</p>
+    </div>
+</div>
+</body>
+</html>
