@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素</title>
+    <style type="text/css">
+        p:first-child::first-letter {
+            float: left;
+            color: #903;
+            padding: 4px 8px 0 3px;
+            font: 75px/60px Georgia;
+        }
+        /* 用于排版
+        ::first-letter 首字母
+        ::first-line   文本第一行
+        ::before 配合content属性
+        ::after
+        ::selection 文本被选择时候的样式，只接受
+         */
+        ::selection {
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames actrurpis egestas. Vestibulum tortor quam,feugiat vitae, ultricies eget, tempor sitamet, ante.Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerate eleifend leo.
+    </p>
+</body>
+</html>
