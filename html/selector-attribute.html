@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器属性选择器</title>
+    <style type="text/css">
+        table,tr,td {
+            border: 1px crimson solid;
+            box-sizing: border-box;
+            border-collapse: collapse; //新接触的内容
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>选择器</td>
+        <td>功能描述</td>
+    </tr>
+    <tr>
+        <td>E[attr]</td>
+        <td>选择匹配具有属性attr的E元素。其中E可以省略，表示选择定义了attr属性的任意类型元素</td>
+    </tr>
+    <tr>
+        <td>E[attr=val]</td>
+        <td>选择匹配具有属性attr的E元素，并且attr的属性值为val（其中val区分大小写），同样E元素省略时表示选择定义了attr属性值为val的任意类型元素。</td>
+    </tr>
+    <tr>
+        <td>E[attr|=val]</td>
+        <td>选择匹配E元素，且E元素定义了属性attr，attr属性值是一个具有val或者以val-开始的属性值</td>
+    </tr>
+    <tr>
+        <td>E[attr~=val]</td>
+        <td>选择匹配E元素，且E元素定义了attr属性，attr属性值具有多个空格分割的值，其中一个值等于val</td>
+    </tr>
+    <tr>
+        <td>E[attr*=val]</td>
+        <td>选择匹配元素E，且E元素定义了属性attr，其中属性值任意位置包含了val</td>
+    </tr>
+    <tr>
+        <td>E[attr^=val]</td>
+        <td>选择匹配元素E，且E元素定义了属性attr，其属性值以val开头的任意字符串</td>
+    </tr>
+    <tr>
+        <td>E[attr$=val]</td>
+        <td>选择匹配元素E，且E元素定义了属性attr，其属性值以val结尾的任意字符串</td>
+    </tr>
+</table>
+</body>
+</html>
