@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3边框</title>
+    <!--
+         border-width: 设置元素边框粗细
+         border-color: 设置元素边框颜色
+         border-style: 设置元素边框类型
+     -->
+    <!--
+        border-image border-radius border-shadow
+    -->
+    <style>
+        table {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px dotted red;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>属性值</td>
+        <td>功能描述</td>
+        <td>示例代码</td>
+    </tr>
+    <tr>
+        <td>none</td>
+        <td>定义无边框</td>
+        <td>.elm{border:none;}</td>
+    </tr>
+    <tr>
+        <td>hidden</td>
+        <td>与“none”相同。不过应用于表时除外，对于表，hidden用于解决边框冲突</td>
+        <td>.elm{border:none;}</td>
+    </tr>
+    <tr>
+        <td>dotted</td>
+        <td>定义点状边框</td>
+        <td>.elm{border:3px dotted red;}</td>
+    </tr>
+    <tr>
+        <td>dashed</td>
+        <td>定义虚线边框</td>
+        <td>.elm{border:3px dashed red;}</td>
+    </tr>
+    <tr>
+        <td>solid</td>
+        <td>定义实现边框</td>
+        <td>.elm{border:3px solid red;}</td>
+    </tr>
+    <tr>
+        <td>double</td>
+        <td>定义双线。双线的宽度等于border-width</td>
+        <td>.elm{border:3px dashed red;}</td>
+    </tr>
+    <tr>
+        <td>groove</td>
+        <td>定义3D凹槽边框，其效果取决于border-color的值</td>
+        <td>.elm{border:3px groove red;}</td>
+    </tr>
+    <tr>
+        <td>ridge</td>
+        <td>定义3D垄状边框，其效果取决于border-color的值</td>
+        <td>.elm{border:3px ridge red;}</td>
+    </tr>
+    <tr>
+        <td>inset</td>
+        <td>定义3D insert边框，其效果取决于border-color的值</td>
+        <td>.elm{border:3px inset red;}</td>
+    </tr>
+    <tr>
+        <td>outset</td>
+        <td>定义3D outset边框，其效果取决于border-color的值</td>
+        <td>.elm{border:3px outset red;}</td>
+    </tr>
+    <tr>
+        <td>inherit</td>
+        <td>规定应该从父亲元素继承边框样式。</td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
